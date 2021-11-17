@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="assets/css/templatehotel.css" />
+
+    </head>
+    <Body>
+        <main>
+                
+            <div class="container_background flex_column" >
+                
+                    <h1>CHECK-IN ONLINE</h1>
+                    <div class="bar"></div>
+                <div class="form">
+                    
+                    <form action="paginahotel.html"  target="_blank" method="POST" class="form_right" id="buttomoutside">
+                        <input type="text" name="Nome " placeholder="Nome Completo" required class="input1"/>
+                        <input type="password" name="RG " placeholder="RG" required class="input1"/>
+                        <input type="password" name="CPF/PASSAPORT " placeholder="CPF/Passapot(Travel Document Mumber" required class="input1" /><br>
+                        <input type="email" name="e-mail " placeholder="E-mail" required class="input1" />
+                        <select name="order" class="input1">
+                            <option>Selecione o hotel</option>
+                            <option>Salinas Maragogi</option>
+                            <option>Transamerica Comandatuba</option>
+                            <option>Sauipe Resort</option>
+                        </select><br/>
+                        <div class="label1">
+                            <label class="input1" for="entrada" > Entrada (check in) </label>
+                            <label class="input1" for="saida"> Saída (check out)</label>
+                        </div>
+                        
+                        <div  class="label2">
+                            <input type="date" name="entrada "  id="entrada" required class="input1"/>
+                            <input type="date" name="saida "  id="saida" required class="input1" /> 
+                        </div>
+                            
+                            
+                        <br/>
+                        <input type="password" name="Reserva " placeholder="Número de Reserva" required class="input1"/>
+                        
+                    </form>
+                    <form action="paginahotel.html" target="_blank" method="POST"class="form_left" id="buttomoutside">
+                        <label class="input1"> Data de Nascimento
+                            <input type="date" name="entrada "  required class="input1 input_left"/>
+                        </label><br/>
+                        <input type="tel" name="Telefone " placeholder="DDD + Celular/Mobile" required class="input1 input_left"/>
+                        <br/>
+                        <input type="text" name="Estado " placeholder="Estado" required class="input1"/>
+                        <input type="text" name="Cidade " placeholder="Cidade" required class="input1" />
+                        <input type="text" name="Rua " placeholder="Rua" required class="input1 input_left"/>
+                        <input type="text" name="Bairro " placeholder="Bairro" required class="input1"/>
+                        <input type="number" name="CEP" placeholder="CEP" required class="input1"/>
+                        <input type="text" name="Complemento " placeholder="Complemento" required class="input1 input_left"/>
+                        <input type="number" name="adultos" placeholder="Número Adultos" required class="input1"/>
+                        <input type="number" name="crianças " placeholder="Número de Crianças" required class="input1"/>
+                        
+                        </form>
+                        
+                        
+                        
+                </div>
+                
+                <button type="buttom" form="buttomoutside">REALIZAR CHECK-IN </button>   
+                
+            </div>
+        </main>
+    </Body>
+</html>

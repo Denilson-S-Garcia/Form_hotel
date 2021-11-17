@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+}
+.container_background {
+  display: flex;
+  max-width: 100%;
+  height: 660px;
+  background-image: url(https://images3.alphacoders.com/683/683882.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+}
+.form_right {
+  align-items: center;
+  width: 480px;
+  height: 480px;
+  padding: 30px;
+  background-color: #e6e3e3;
+
+  margin-right: 30px;
+  opacity: 0.8;
+}
+.form_left {
+  align-items: center;
+  width: 480px;
+  height: 480px;
+  padding: 30px;
+  background-color: #e6e3e3;
+  opacity: 0.8;
+}
+.form_right .input1 {
+  padding: 4px;
+  width: 95%;
+}
+form .input_left {
+  width: 95%;
+  padding: 4px;
+  margin-bottom: 24px;
+}
+.label1 {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bolder;
+  opacity: 0.7;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: -10px;
+}
+.label2 {
+  display: flex;
+  margin-left: 15px;
+}
+.label1 input {
+  flex: 1;
+}
+.label2 input {
+  flex: 1;
+}
+
+.input1 {
+  margin: 10px;
+  color: rgb(139, 78, 3);
+}
+h1 {
+  margin-bottom: 5px;
+  font-family: 'Segoe UI';
+  color: #222557;
+}
+.bar {
+  border-bottom: 2px solid #222557;
+  width: 70px;
+  margin-bottom: 40px;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+button {
+  background-color: rgba(9, 167, 240, 0.966);
+  border: 2px solid #09afe2;
+  width: 200px;
+  height: 40px;
+  color: #e6e3e3;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 10px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+button:hover {
+  background-color: rgb(0, 163, 109);
+}
+
+@media (min-width: 320px) and (max-width: 990px) {
+  body,
+  .container_background {
+    height: 100%;
+  }
+  .form,
+  .form_right,
+  .form_left {
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 520px) {
+  body,
+  .container_background {
+    width: 100%;
+  }
+  .form,
+  .form_right,
+  .form_left {
+    width: 100%;
+  }
+  form .input_left {
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+  .label1 {
+    font-size: 15px;
+  }
+}
